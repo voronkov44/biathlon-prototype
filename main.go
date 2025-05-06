@@ -35,7 +35,7 @@ func main() {
 	errorLogger := log.New(errorLogFile, "", log.LstdFlags|log.Lshortfile)
 
 	// Загрузка конфигурации
-	cfg, err := configs.LoadConfig("input_files/configs.json")
+	cfg, err := configs.LoadConfig("input_files/config.json")
 	if err != nil {
 		errorLogger.Fatalf("Ошибка загрузки конфигурации: %v", err)
 	}
