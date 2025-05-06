@@ -36,7 +36,10 @@ docker run -it --rm biathlon:v1
 
 С монтированием файлов событий и логов
 ```
-docker run -it --rm \ -v $(pwd)/input_files:/opt/input_files \ -v $(pwd)/logs:/opt/logs \ biathlon:v1
+docker run -it --rm \
+  -v $(pwd)/input_files:/opt/input_files \
+  -v $(pwd)/logs:/opt/logs \
+  biathlon:v1
 ```
 
 Управление контейнерами
