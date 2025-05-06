@@ -11,7 +11,7 @@ git clone https://github.com/voronkov44/biathlon-prototype2.git
 
 ### 2. Переход в корневую директорию 
 ```bash
-cd biathlon-prototype
+cd biathlon-prototype2
 ```
 
 ### 3. Запуск проекта
