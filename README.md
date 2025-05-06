@@ -22,7 +22,7 @@ go run main.go
 ### Сборка и запуск проекта через Docker
 Для удобства был собран `dockerfile`
 
-*Требуется установка [docker](https://www.docker.com/products/docker-desktop/), если не установлен, смотрите [зависимости]()*
+*Требуется установка [docker](https://www.docker.com/products/docker-desktop/), если не установлен, смотрите [зависимости](https://github.com/voronkov44/biathlon-prototype?tab=readme-ov-file#%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8)*
 
 Сборка образа
 ```
@@ -80,7 +80,7 @@ biathlon-prototype/
 ```
 
 ## Конфигурация гонки (config.json)
-```json
+```
 {
     "laps": 2, // Количество кругов
     "lapLen": 3651, // Длина каждого основного круга
