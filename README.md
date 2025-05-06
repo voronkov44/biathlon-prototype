@@ -54,14 +54,28 @@ docker rmi biathlon:v1
 docker system prune
 ```
 
+## Тесты
+Запуск всех тестов
+```bash
+go test -v ./...
+```
+
+Запуск определенных тестов
+Пример:
+```bash
+go test -v ./race
+```
+
 
 ## Структура проекта
 ```
 biathlon-prototype/
-├── config/
+├── configs/
 │ └── config.go # Чтение конфигурации гонки
+│  └── config_test.go # Тест файла config
 ├── events/
 │ └── event.go # Парсинг событий гонки
+│  └── event_test.go # Тест файла event
 ├── input_files/
 │ ├── config.json # Параметры гонки
 │ └── events.txt # Лог событий гонки
@@ -72,7 +86,9 @@ biathlon-prototype/
 │ └── athlete.go # Модель участника
 ├── race/
 │ ├── race.go # Обработка событий гонки
-│ └── result.go # Вывод результатов
+│  └── race_test.go # Тест файла race
+│ ├── results.go # Вывод результатов
+│  └── results_test.go # Тест файла results
 ├── utils/
 │ └── time.go # Утилиты для работы со временем
 ├── main.go # Точка входа
