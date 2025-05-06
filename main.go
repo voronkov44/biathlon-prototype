@@ -1,7 +1,7 @@
 package main
 
 import (
-	"biathlon-prototype/config"
+	"biathlon-prototype/configs"
 	"biathlon-prototype/events"
 	"biathlon-prototype/race"
 	"bufio"
@@ -35,7 +35,7 @@ func main() {
 	errorLogger := log.New(errorLogFile, "", log.LstdFlags|log.Lshortfile)
 
 	// Загрузка конфигурации
-	cfg, err := config.LoadConfig("input_files/config.json")
+	cfg, err := configs.LoadConfig("input_files/configs.json")
 	if err != nil {
 		errorLogger.Fatalf("Ошибка загрузки конфигурации: %v", err)
 	}

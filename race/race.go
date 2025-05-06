@@ -1,7 +1,7 @@
 package race
 
 import (
-	"biathlon-prototype/config"
+	"biathlon-prototype/configs"
 	"biathlon-prototype/events"
 	"biathlon-prototype/models"
 	"biathlon-prototype/utils"
@@ -12,7 +12,7 @@ import (
 )
 
 type Race struct {
-	Config        config.Config
+	Config        configs.Config
 	StartTime     time.Time
 	StartDelta    time.Duration
 	Athletes      map[int]*models.Athlete
@@ -20,7 +20,7 @@ type Race struct {
 	CurrentFiring map[int]int
 }
 
-func NewRace(cfg config.Config) (*Race, error) {
+func NewRace(cfg configs.Config) (*Race, error) {
 	startTime, err := time.Parse("15:04:05", cfg.Start)
 	if err != nil {
 		return nil, fmt.Errorf("ошибка парсинга времени старта: %v", err)
