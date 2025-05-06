@@ -6,7 +6,7 @@
 
 ### 1. Клонирование репозитория
 ```bash
-git clone https://github.com/voronkov44/biathlon-prototype.git
+git clone https://github.com/voronkov44/biathlon-prototype2.git
 ```
 
 ### 2. Переход в корневую директорию 
